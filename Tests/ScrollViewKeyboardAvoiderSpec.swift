@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-@testable import KeyboardFrameChangeListener
 @testable import ScrollViewKeyboardAvoider
 
 class ScrollViewKeyboardAvoiderSpec: QuickSpec {
@@ -26,8 +25,7 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
 
                 context("keyboard frame changes") {
                     beforeEach {
-                        let change = KeyboardFrameChange(frame: .zero, animationDuration: 0)
-                        sut.handleKeyboardFrameChange(change, for: scrollView)
+                        sut.handleKeyboardFrameChange(.zero, animationDuration: 0, for: scrollView)
                     }
 
                     it("should not animate") {
@@ -58,23 +56,27 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                     }
 
                     context("standard keyboard becomes fully visible") {
-                        var change: KeyboardFrameChange!
+                        var frame: CGRect!
+                        var animationDuration: TimeInterval!
 
                         beforeEach {
-                            change = standardKeyboardFullyVisible(screenSize: screenSize)
-                            sut.handleKeyboardFrameChange(change, for: scrollView)
+                            frame = standardKeyboardFullyVisible(screenSize: screenSize)
+                            animationDuration = 0.5
+                            sut.handleKeyboardFrameChange(frame,
+                                                          animationDuration: animationDuration,
+                                                          for: scrollView)
                         }
 
                         it("should animate with correct duration") {
-                            expect(didAnimateWithDuration).to(equal(change.animationDuration))
+                            expect(didAnimateWithDuration).to(equal(animationDuration))
                         }
 
                         it("should set correct bottom content inset") {
-                            expect(scrollView.contentInset.bottom).to(equal(change.frame.size.height))
+                            expect(scrollView.contentInset.bottom).to(equal(frame.size.height))
                         }
 
                         it("should set correct bottom indicator inset") {
-                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(change.frame.size.height))
+                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(frame.size.height))
                         }
 
                         it("should update layout") {
@@ -83,15 +85,19 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                     }
 
                     context("standard keyboard becomes not visible") {
-                        var change: KeyboardFrameChange!
+                        var frame: CGRect!
+                        var animationDuration: TimeInterval!
 
                         beforeEach {
-                            change = standardKeyboardNotVisible(screenSize: screenSize)
-                            sut.handleKeyboardFrameChange(change, for: scrollView)
+                            frame = standardKeyboardNotVisible(screenSize: screenSize)
+                            animationDuration = 0.3
+                            sut.handleKeyboardFrameChange(frame,
+                                                          animationDuration: animationDuration,
+                                                          for: scrollView)
                         }
 
                         it("should animate with correct duration") {
-                            expect(didAnimateWithDuration).to(equal(change.animationDuration))
+                            expect(didAnimateWithDuration).to(equal(animationDuration))
                         }
 
                         it("should set correct bottom content inset") {
@@ -104,23 +110,27 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                     }
 
                     context("standard keyboard becomes partially visible") {
-                        var change: KeyboardFrameChange!
+                        var frame: CGRect!
+                        var animationDuration: TimeInterval!
 
                         beforeEach {
-                            change = standardKeyboardPartiallyVisible(screenSize: screenSize)
-                            sut.handleKeyboardFrameChange(change, for: scrollView)
+                            frame = standardKeyboardPartiallyVisible(screenSize: screenSize)
+                            animationDuration = 0.7
+                            sut.handleKeyboardFrameChange(frame,
+                                                          animationDuration: animationDuration,
+                                                          for: scrollView)
                         }
 
                         it("should animate with correct duration") {
-                            expect(didAnimateWithDuration).to(equal(change.animationDuration))
+                            expect(didAnimateWithDuration).to(equal(animationDuration))
                         }
 
                         it("should set correct bottom content inset") {
-                            expect(scrollView.contentInset.bottom).to(equal(change.frame.size.height / 2))
+                            expect(scrollView.contentInset.bottom).to(equal(frame.size.height / 2))
                         }
 
                         it("should set correct bottom indicator inset") {
-                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(change.frame.size.height / 2))
+                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(frame.size.height / 2))
                         }
                     }
                 }
@@ -138,36 +148,44 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                     }
 
                     context("standard keyboard becomes fully visible") {
-                        var change: KeyboardFrameChange!
+                        var frame: CGRect!
+                        var animationDuration: TimeInterval!
 
                         beforeEach {
-                            change = standardKeyboardFullyVisible(screenSize: screenSize)
-                            sut.handleKeyboardFrameChange(change, for: scrollView)
+                            frame = standardKeyboardFullyVisible(screenSize: screenSize)
+                            animationDuration = 0.1
+                            sut.handleKeyboardFrameChange(frame,
+                                                          animationDuration: animationDuration,
+                                                          for: scrollView)
                         }
 
                         it("should animate with correct duration") {
-                            expect(didAnimateWithDuration).to(equal(change.animationDuration))
+                            expect(didAnimateWithDuration).to(equal(animationDuration))
                         }
 
                         it("should set correct bottom content inset") {
-                            expect(scrollView.contentInset.bottom).to(equal(change.frame.size.height - margin))
+                            expect(scrollView.contentInset.bottom).to(equal(frame.size.height - margin))
                         }
 
                         it("should set correct bottom indicator inset") {
-                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(change.frame.size.height - margin))
+                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(frame.size.height - margin))
                         }
                     }
 
                     context("standard keyboard becomes not visible") {
-                        var change: KeyboardFrameChange!
+                        var frame: CGRect!
+                        var animationDuration: TimeInterval!
 
                         beforeEach {
-                            change = standardKeyboardNotVisible(screenSize: screenSize)
-                            sut.handleKeyboardFrameChange(change, for: scrollView)
+                            frame = standardKeyboardNotVisible(screenSize: screenSize)
+                            animationDuration = 0.333
+                            sut.handleKeyboardFrameChange(frame,
+                                                          animationDuration: animationDuration,
+                                                          for: scrollView)
                         }
 
                         it("should animate with correct duration") {
-                            expect(didAnimateWithDuration).to(equal(change.animationDuration))
+                            expect(didAnimateWithDuration).to(equal(animationDuration))
                         }
 
                         it("should set correct bottom content inset") {
@@ -180,23 +198,27 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                     }
 
                     context("standard keyboard becomes partially visible") {
-                        var change: KeyboardFrameChange!
+                        var frame: CGRect!
+                        var animationDuration: TimeInterval!
 
                         beforeEach {
-                            change = standardKeyboardPartiallyVisible(screenSize: screenSize)
-                            sut.handleKeyboardFrameChange(change, for: scrollView)
+                            frame = standardKeyboardPartiallyVisible(screenSize: screenSize)
+                            animationDuration = 0.25
+                            sut.handleKeyboardFrameChange(frame,
+                                                          animationDuration: animationDuration,
+                                                          for: scrollView)
                         }
 
                         it("should animate with correct duration") {
-                            expect(didAnimateWithDuration).to(equal(change.animationDuration))
+                            expect(didAnimateWithDuration).to(equal(animationDuration))
                         }
 
                         it("should set correct bottom content inset") {
-                            expect(scrollView.contentInset.bottom).to(equal(change.frame.size.height / 2 - margin))
+                            expect(scrollView.contentInset.bottom).to(equal(frame.size.height / 2 - margin))
                         }
 
                         it("should set correct bottom indicator inset") {
-                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(change.frame.size.height / 2 - margin))
+                            expect(scrollView.scrollIndicatorInsets.bottom).to(equal(frame.size.height / 2 - margin))
                         }
                     }
                 }
@@ -207,7 +229,7 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
             return UIScrollViewSpy(frame: CGRect(origin: .zero, size: screenSize).insetBy(dx: margin, dy: margin))
         }
 
-        func standardKeyboardFullyVisible(screenSize: CGSize) -> KeyboardFrameChange {
+        func standardKeyboardFullyVisible(screenSize: CGSize) -> CGRect {
             let size = CGSize(width: screenSize.width, height: 100)
             let frame = CGRect(
                 origin: CGPoint(
@@ -216,10 +238,10 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                 ),
                 size: size
             )
-            return KeyboardFrameChange(frame: frame, animationDuration: 0.3)
+            return frame
         }
 
-        func standardKeyboardPartiallyVisible(screenSize: CGSize) -> KeyboardFrameChange {
+        func standardKeyboardPartiallyVisible(screenSize: CGSize) -> CGRect {
             let size = CGSize(width: screenSize.width, height: 100)
             let frame = CGRect(
                 origin: CGPoint(
@@ -228,10 +250,10 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                 ),
                 size: size
             )
-            return KeyboardFrameChange(frame: frame, animationDuration: 0.5)
+            return frame
         }
 
-        func standardKeyboardNotVisible(screenSize: CGSize) -> KeyboardFrameChange {
+        func standardKeyboardNotVisible(screenSize: CGSize) -> CGRect {
             let size = CGSize(width: screenSize.width, height: 100)
             let frame = CGRect(
                 origin: CGPoint(
@@ -240,7 +262,7 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                 ),
                 size: size
             )
-            return KeyboardFrameChange(frame: frame, animationDuration: 0.7)
+            return frame
         }
     }
 

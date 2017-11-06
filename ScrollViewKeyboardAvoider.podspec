@@ -14,6 +14,4 @@ Pod::Spec.new do |s|
   s.source_files          = 'Sources'
   s.requires_arc          = true
   s.frameworks            = 'UIKit'
-  
-  s.dependency 'KeyboardFrameChangeListener', '~> 1.0'
 end

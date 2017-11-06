@@ -1,5 +1,4 @@
 import UIKit
-import KeyboardFrameChangeListener
 
 /// ScrollViewKeyboardAvoiding implementation
 public class ScrollViewKeyboardAvoider: ScrollViewKeyboardAvoiding {
@@ -19,17 +18,20 @@ public class ScrollViewKeyboardAvoider: ScrollViewKeyboardAvoiding {
     /// Handle keyboard frame change
     ///
     /// - Parameters:
-    ///   - change: keyboard frame change representation
+    ///   - frame: new keyboard frame
+    ///   - animationDuration: frame change animation duration
     ///   - scrollView: target UIScrollView
-    public func handleKeyboardFrameChange(_ change: KeyboardFrameChange, for scrollView: UIScrollView) {
+    public func handleKeyboardFrameChange(_ frame: CGRect,
+                                          animationDuration: TimeInterval,
+                                          for scrollView: UIScrollView) {
         guard let superview = scrollView.superview else { return }
-        let keyboardFrame = superview.convert(change.frame, from: nil)
+        let keyboardFrame = superview.convert(frame, from: nil)
         var insets = UIEdgeInsets.zero
         let bottomCoverage = scrollView.frame.maxY - keyboardFrame.minY
         if bottomCoverage > 0 {
             insets.bottom = max(bottomCoverage - scrollView.safeAreaInsets.bottom, scrollView.safeAreaInsets.bottom)
         }
-        animate(change.animationDuration) {
+        animate(animationDuration) {
             scrollView.contentInset = insets
             scrollView.scrollIndicatorInsets = insets
             scrollView.layoutIfNeeded()
