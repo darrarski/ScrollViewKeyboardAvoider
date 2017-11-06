@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023E69B34C2D92F1785BA7D1 /* Pods_ScrollViewKeyboardAvoiderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FA6A997E642BE61AE5BBD4 /* Pods_ScrollViewKeyboardAvoiderTests.framework */; };
 		31C423FD1FB11C3F001C65B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C423FC1FB11C3F001C65B2 /* AppDelegate.swift */; };
 		31C423FF1FB11C3F001C65B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C423FE1FB11C3F001C65B2 /* ViewController.swift */; };
 		31C424041FB11C3F001C65B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C424031FB11C3F001C65B2 /* Assets.xcassets */; };
@@ -15,8 +16,10 @@
 		31C424191FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C424171FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31C4241C1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */; };
 		31C4241D1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		31C424291FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C424281FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderTests.swift */; };
+		31C424291FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C424281FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderSpec.swift */; };
 		31C4242B1FB11E9D001C65B2 /* ScrollViewKeyboardAvoider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */; };
+		347A07AD6F3856305ADEE1B7 /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2278EDC34D0E52F9610589AD /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework */; };
+		E29C20A7EF37B010AA377B32 /* Pods_ScrollViewKeyboardAvoider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B9C17AE947EA6756DB855F /* Pods_ScrollViewKeyboardAvoider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		119FAE793574E8774F720C90 /* Pods-ScrollViewKeyboardAvoider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoider/Pods-ScrollViewKeyboardAvoider.debug.xcconfig"; sourceTree = "<group>"; };
+		213E99A01251BF0EC70FB9E7 /* Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2278EDC34D0E52F9610589AD /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewKeyboardAvoiderDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C423F91FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewKeyboardAvoiderDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C423FC1FB11C3F001C65B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31C423FE1FB11C3F001C65B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,8 +68,14 @@
 		31C424171FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewKeyboardAvoider.h; sourceTree = "<group>"; };
 		31C424181FB11E1B001C65B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C424261FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewKeyboardAvoiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31C424281FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewKeyboardAvoiderTests.swift; sourceTree = "<group>"; };
+		31C424281FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewKeyboardAvoiderSpec.swift; sourceTree = "<group>"; };
 		31C4242A1FB11E9D001C65B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0424F0C1FC081F94426D1C7 /* Pods-ScrollViewKeyboardAvoider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoider.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoider/Pods-ScrollViewKeyboardAvoider.release.xcconfig"; sourceTree = "<group>"; };
+		A3FA6A997E642BE61AE5BBD4 /* Pods_ScrollViewKeyboardAvoiderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewKeyboardAvoiderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6067D488C91C2B1D5649E16 /* Pods-ScrollViewKeyboardAvoiderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoiderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8B9C17AE947EA6756DB855F /* Pods_ScrollViewKeyboardAvoider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewKeyboardAvoider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1951C1D7E4EC3B08B144296 /* Pods-ScrollViewKeyboardAvoiderDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoiderDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		EB46CB80EFDEFC67E0E57E0A /* Pods-ScrollViewKeyboardAvoiderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoiderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31C4241C1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Frameworks */,
+				347A07AD6F3856305ADEE1B7 /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29C20A7EF37B010AA377B32 /* Pods_ScrollViewKeyboardAvoider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,16 +101,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				31C4242B1FB11E9D001C65B2 /* ScrollViewKeyboardAvoider.framework in Frameworks */,
+				023E69B34C2D92F1785BA7D1 /* Pods_ScrollViewKeyboardAvoiderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055D80F3C94FD2AE44B447E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B9C17AE947EA6756DB855F /* Pods_ScrollViewKeyboardAvoider.framework */,
+				A3FA6A997E642BE61AE5BBD4 /* Pods_ScrollViewKeyboardAvoiderTests.framework */,
+				2278EDC34D0E52F9610589AD /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		31C423F01FB11C3F001C65B2 = {
 			isa = PBXGroup;
 			children = (
 				31C423FB1FB11C3F001C65B2 /* DemoApp */,
+				055D80F3C94FD2AE44B447E2 /* Frameworks */,
+				3D300B88C6296D8CC0550A26 /* Pods */,
 				31C423FA1FB11C3F001C65B2 /* Products */,
 				31C424161FB11E1B001C65B2 /* Sources */,
 				31C424271FB11E9D001C65B2 /* Tests */,
@@ -139,9 +166,22 @@
 			isa = PBXGroup;
 			children = (
 				31C4242A1FB11E9D001C65B2 /* Info.plist */,
-				31C424281FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderTests.swift */,
+				31C424281FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderSpec.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		3D300B88C6296D8CC0550A26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				119FAE793574E8774F720C90 /* Pods-ScrollViewKeyboardAvoider.debug.xcconfig */,
+				A0424F0C1FC081F94426D1C7 /* Pods-ScrollViewKeyboardAvoider.release.xcconfig */,
+				C6067D488C91C2B1D5649E16 /* Pods-ScrollViewKeyboardAvoiderTests.debug.xcconfig */,
+				EB46CB80EFDEFC67E0E57E0A /* Pods-ScrollViewKeyboardAvoiderTests.release.xcconfig */,
+				213E99A01251BF0EC70FB9E7 /* Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig */,
+				E1951C1D7E4EC3B08B144296 /* Pods-ScrollViewKeyboardAvoiderDemoApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +202,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31C4240B1FB11C3F001C65B2 /* Build configuration list for PBXNativeTarget "ScrollViewKeyboardAvoiderDemoApp" */;
 			buildPhases = (
+				CCC40F48EA31F73A18C81C36 /* [CP] Check Pods Manifest.lock */,
 				31C423F51FB11C3F001C65B2 /* Sources */,
 				31C423F61FB11C3F001C65B2 /* Frameworks */,
 				31C423F71FB11C3F001C65B2 /* Resources */,
 				31C424211FB11E1B001C65B2 /* Embed Frameworks */,
+				1141544689786F52C8318D9D /* [CP] Embed Pods Frameworks */,
+				F0786D16D28CAD6D47FC1F35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,10 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31C4241E1FB11E1B001C65B2 /* Build configuration list for PBXNativeTarget "ScrollViewKeyboardAvoider" */;
 			buildPhases = (
+				B8210D29537FB1F6B16BF79A /* [CP] Check Pods Manifest.lock */,
 				31C424101FB11E1B001C65B2 /* Sources */,
 				31C424111FB11E1B001C65B2 /* Frameworks */,
 				31C424121FB11E1B001C65B2 /* Headers */,
 				31C424131FB11E1B001C65B2 /* Resources */,
+				A168CF247AA80BF0077A5A06 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31C4242E1FB11E9D001C65B2 /* Build configuration list for PBXNativeTarget "ScrollViewKeyboardAvoiderTests" */;
 			buildPhases = (
+				03DCD891040350354DF64CC5 /* [CP] Check Pods Manifest.lock */,
 				31C424221FB11E9D001C65B2 /* Sources */,
 				31C424231FB11E9D001C65B2 /* Frameworks */,
 				31C424241FB11E9D001C65B2 /* Resources */,
+				EFDF8111B60096ADD682EC37 /* [CP] Embed Pods Frameworks */,
+				4B153AA00AB644CB2211C341 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +331,148 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03DCD891040350354DF64CC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewKeyboardAvoiderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1141544689786F52C8318D9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeyboardFrameChangeListener/KeyboardFrameChangeListener.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeyboardFrameChangeListener.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B153AA00AB644CB2211C341 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A168CF247AA80BF0077A5A06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoider/Pods-ScrollViewKeyboardAvoider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8210D29537FB1F6B16BF79A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewKeyboardAvoider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC40F48EA31F73A18C81C36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewKeyboardAvoiderDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDF8111B60096ADD682EC37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeyboardFrameChangeListener/KeyboardFrameChangeListener.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeyboardFrameChangeListener.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0786D16D28CAD6D47FC1F35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31C423F51FB11C3F001C65B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -305,7 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31C424291FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderTests.swift in Sources */,
+				31C424291FB11E9D001C65B2 /* ScrollViewKeyboardAvoiderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +635,7 @@
 		};
 		31C4240C1FB11C3F001C65B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213E99A01251BF0EC70FB9E7 /* Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +650,7 @@
 		};
 		31C4240D1FB11C3F001C65B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1951C1D7E4EC3B08B144296 /* Pods-ScrollViewKeyboardAvoiderDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +665,7 @@
 		};
 		31C4241F1FB11E1B001C65B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 119FAE793574E8774F720C90 /* Pods-ScrollViewKeyboardAvoider.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +689,7 @@
 		};
 		31C424201FB11E1B001C65B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0424F0C1FC081F94426D1C7 /* Pods-ScrollViewKeyboardAvoider.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +713,7 @@
 		};
 		31C4242F1FB11E9D001C65B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6067D488C91C2B1D5649E16 /* Pods-ScrollViewKeyboardAvoiderTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -532,6 +727,7 @@
 		};
 		31C424301FB11E9D001C65B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB46CB80EFDEFC67E0E57E0A /* Pods-ScrollViewKeyboardAvoiderTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
