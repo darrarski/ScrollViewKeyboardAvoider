@@ -12,7 +12,34 @@
 		31C424041FB11C3F001C65B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C424031FB11C3F001C65B2 /* Assets.xcassets */; };
 		31C424071FB11C3F001C65B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C424051FB11C3F001C65B2 /* LaunchScreen.storyboard */; };
 		31C4240F1FB11D1A001C65B2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C4240E1FB11D1A001C65B2 /* View.swift */; };
+		31C424191FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C424171FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31C4241C1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */; };
+		31C4241D1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31C4241A1FB11E1B001C65B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31C423F11FB11C3F001C65B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31C424141FB11E1B001C65B2;
+			remoteInfo = ScrollViewKeyboardAvoider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31C424211FB11E1B001C65B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31C4241D1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		31C423F91FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewKeyboardAvoiderDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,21 @@
 		31C424061FB11C3F001C65B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31C424081FB11C3F001C65B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C4240E1FB11D1A001C65B2 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollViewKeyboardAvoider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C424171FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewKeyboardAvoider.h; sourceTree = "<group>"; };
+		31C424181FB11E1B001C65B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		31C423F61FB11C3F001C65B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C4241C1FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C424111FB11E1B001C65B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				31C423FB1FB11C3F001C65B2 /* DemoApp */,
+				31C424161FB11E1B001C65B2 /* Sources */,
 				31C423FA1FB11C3F001C65B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				31C423F91FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp.app */,
+				31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +104,27 @@
 			path = DemoApp;
 			sourceTree = "<group>";
 		};
+		31C424161FB11E1B001C65B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				31C424181FB11E1B001C65B2 /* Info.plist */,
+				31C424171FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31C424121FB11E1B001C65B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C424191FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		31C423F81FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp */ = {
@@ -74,15 +134,35 @@
 				31C423F51FB11C3F001C65B2 /* Sources */,
 				31C423F61FB11C3F001C65B2 /* Frameworks */,
 				31C423F71FB11C3F001C65B2 /* Resources */,
+				31C424211FB11E1B001C65B2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				31C4241B1FB11E1B001C65B2 /* PBXTargetDependency */,
 			);
 			name = ScrollViewKeyboardAvoiderDemoApp;
 			productName = ScrollViewKeyboardAvoider;
 			productReference = 31C423F91FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		31C424141FB11E1B001C65B2 /* ScrollViewKeyboardAvoider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31C4241E1FB11E1B001C65B2 /* Build configuration list for PBXNativeTarget "ScrollViewKeyboardAvoider" */;
+			buildPhases = (
+				31C424101FB11E1B001C65B2 /* Sources */,
+				31C424111FB11E1B001C65B2 /* Frameworks */,
+				31C424121FB11E1B001C65B2 /* Headers */,
+				31C424131FB11E1B001C65B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollViewKeyboardAvoider;
+			productName = ScrollViewKeyboardAvoider;
+			productReference = 31C424151FB11E1B001C65B2 /* ScrollViewKeyboardAvoider.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +175,10 @@
 				ORGANIZATIONNAME = "Dariusz Rybicki";
 				TargetAttributes = {
 					31C423F81FB11C3F001C65B2 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					31C424141FB11E1B001C65B2 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				31C423F81FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp */,
+				31C424141FB11E1B001C65B2 /* ScrollViewKeyboardAvoider */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +210,13 @@
 			files = (
 				31C424071FB11C3F001C65B2 /* LaunchScreen.storyboard in Resources */,
 				31C424041FB11C3F001C65B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31C424131FB11E1B001C65B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +233,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31C424101FB11E1B001C65B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31C4241B1FB11E1B001C65B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31C424141FB11E1B001C65B2 /* ScrollViewKeyboardAvoider */;
+			targetProxy = 31C4241A1FB11E1B001C65B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		31C424051FB11C3F001C65B2 /* LaunchScreen.storyboard */ = {
@@ -290,6 +397,52 @@
 			};
 			name = Release;
 		};
+		31C4241F1FB11E1B001C65B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.darrarski.ScrollViewKeyboardAvoider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31C424201FB11E1B001C65B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.darrarski.ScrollViewKeyboardAvoider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -307,6 +460,15 @@
 			buildConfigurations = (
 				31C4240C1FB11C3F001C65B2 /* Debug */,
 				31C4240D1FB11C3F001C65B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31C4241E1FB11E1B001C65B2 /* Build configuration list for PBXNativeTarget "ScrollViewKeyboardAvoider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C4241F1FB11E1B001C65B2 /* Debug */,
+				31C424201FB11E1B001C65B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
