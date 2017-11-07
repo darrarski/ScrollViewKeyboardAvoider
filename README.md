@@ -10,6 +10,8 @@ Adjust insets in `UIScrollView` so the keyboard does not cover content.
 
 ## Install
 
+Minimal deployment target: **iOS 10.0**
+
 You can integrate `ScrollViewKeyboardAvoider` with your project using [CocoaPods](https://cocoapods.org). Just add this line to your `Podfile`:
 
 ```ruby
