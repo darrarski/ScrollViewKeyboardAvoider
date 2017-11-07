@@ -18,7 +18,7 @@ pod 'ScrollViewKeyboardAvoider', '~> 1.0'
 
 ## Use
 
-You will need to setup keyboard frame observing, check out [KeyboardFrameChangeListener](https://github.com/darrarski/KeyboardFrameChangeListener) if you need a simple solution.
+You will need to setup keyboard frame observing, check out [KeyboardFrameChangeListener](https://github.com/darrarski/KeyboardFrameChangeListener) if you need a simple solution. You can also check [ScrollViewController](https://github.com/darrarski/ScrollViewController) which wrapps your custom view and handles all the logic automatically.
 
 Example can be found in [DemoApp](DemoApp).
 
