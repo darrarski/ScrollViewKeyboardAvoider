@@ -1,5 +1,5 @@
 PODS:
-  - KeyboardFrameChangeListener (1.0.0)
+  - KeyboardFrameChangeListener (1.0.1)
   - Nimble (7.0.2)
   - Quick (1.2.0)
 
@@ -9,7 +9,7 @@ DEPENDENCIES:
   - Quick (~> 1.1)
 
 SPEC CHECKSUMS:
-  KeyboardFrameChangeListener: 05bc9e5a0ab19f6648b18e11b577a4f376cca794
+  KeyboardFrameChangeListener: 461c4526355872fb28b7e0768143c0aa928a23cc
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
