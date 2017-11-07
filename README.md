@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/badge/platform-iOS-333333.svg)
 ![Swift v4.0](https://img.shields.io/badge/swift-v4.0-orange.svg)
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-green.svg)
-[![Build Status](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider.svg?branch=master)](https://travis-ci.org/darrarski/KeyboardFrameChangeListener)
+[![Build Status](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider.svg?branch=master)](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider)
 [![CocoaPods](https://img.shields.io/cocoapods/v/ScrollViewKeyboardAvoider.svg)](https://cocoapods.org/pods/ScrollViewKeyboardAvoider)
 
 Adjust insets in `UIScrollView` so the keyboard does not cover content.
