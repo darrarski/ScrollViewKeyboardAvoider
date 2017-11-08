@@ -38,7 +38,6 @@ public class ScrollViewKeyboardAvoider: ScrollViewKeyboardAvoiding {
         animate(animationDuration) {
             scrollView.contentInset = insets
             scrollView.scrollIndicatorInsets = insets
-            scrollView.layoutIfNeeded()
         }
     }
 
