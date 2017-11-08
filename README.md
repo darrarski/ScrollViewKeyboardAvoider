@@ -10,7 +10,7 @@ Adjust insets in `UIScrollView` so the keyboard does not cover content.
 
 ## Install
 
-Minimum deployment target: **iOS 10.0**
+Minimum deployment target: **iOS 10.0** (on **iOS 11** uses Safe Area Layout for iPhone X compatibility)
 
 You can integrate `ScrollViewKeyboardAvoider` with your project using [CocoaPods](https://cocoapods.org). Just add this line to your `Podfile`:
 
