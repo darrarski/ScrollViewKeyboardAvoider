@@ -26,17 +26,15 @@ public class ScrollViewKeyboardAvoider: ScrollViewKeyboardAvoiding {
                                           for scrollView: UIScrollView) {
         guard let superview = scrollView.superview else { return }
         let keyboardFrame = superview.convert(frame, from: nil)
-        var insets = UIEdgeInsets.zero
+        var insets = scrollView.contentInset
         let bottomCoverage = scrollView.frame.maxY - keyboardFrame.minY
-        if bottomCoverage > 0 {
-            let safeAreaInsets: UIEdgeInsets
-            if #available(iOS 11.0, *) {
-                safeAreaInsets = scrollView.safeAreaInsets
-            } else {
-                safeAreaInsets = .zero
-            }
-            insets.bottom = max(bottomCoverage - safeAreaInsets.bottom, safeAreaInsets.bottom)
+        let safeAreaInsets: UIEdgeInsets
+        if #available(iOS 11.0, *) {
+            safeAreaInsets = scrollView.safeAreaInsets
+        } else {
+            safeAreaInsets = .zero
         }
+        insets.bottom = max(bottomCoverage - safeAreaInsets.bottom, safeAreaInsets.bottom)
         animate(animationDuration) {
             scrollView.contentInset = insets
             scrollView.scrollIndicatorInsets = insets
