@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'ScrollViewKeyboardAvoider'
-  s.version               = '1.0.1'
+  s.version               = '1.0.2'
   s.summary               = 'Adjust insets in UIScrollView so the keyboard does not cover content'
   s.homepage              = 'https://github.com/darrarski/ScrollViewKeyboardAvoider'
   s.author                = { 'Dariusz Rybicki' => 'darrarski@gmail.com' }
