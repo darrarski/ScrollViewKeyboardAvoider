@@ -17,10 +17,10 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
             }
 
             describe("scroll view without superview") {
-                var scrollView: UIScrollViewSpy!
+                var scrollView: UIScrollView!
 
                 beforeEach {
-                    scrollView = UIScrollViewSpy()
+                    scrollView = UIScrollView()
                 }
 
                 context("keyboard frame changes") {
@@ -30,10 +30,6 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
 
                     it("should not animate") {
                         expect(didAnimateWithDuration).to(beNil())
-                    }
-
-                    it("should not update layout") {
-                        expect(scrollView.layoutIfNeededCalled).to(beFalse())
                     }
                 }
             }
@@ -46,7 +42,7 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
                 }
 
                 describe("full screen scroll view") {
-                    var scrollView: UIScrollViewSpy!
+                    var scrollView: UIScrollView!
                     var superview: UIView!
 
                     beforeEach {
@@ -77,10 +73,6 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
 
                         it("should set correct bottom indicator inset") {
                             expect(scrollView.scrollIndicatorInsets.bottom).to(equal(frame.size.height))
-                        }
-
-                        it("should update layout") {
-                            expect(scrollView.layoutIfNeededCalled).to(beTrue())
                         }
                     }
 
@@ -225,8 +217,8 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
             }
         }
 
-        func fullScreenScrollView(screenSize: CGSize, margin: CGFloat = 0) -> UIScrollViewSpy {
-            return UIScrollViewSpy(frame: CGRect(origin: .zero, size: screenSize).insetBy(dx: margin, dy: margin))
+        func fullScreenScrollView(screenSize: CGSize, margin: CGFloat = 0) -> UIScrollView {
+            return UIScrollView(frame: CGRect(origin: .zero, size: screenSize).insetBy(dx: margin, dy: margin))
         }
 
         func standardKeyboardFullyVisible(screenSize: CGSize) -> CGRect {
@@ -264,19 +256,6 @@ class ScrollViewKeyboardAvoiderSpec: QuickSpec {
             )
             return frame
         }
-    }
-
-    private class UIScrollViewSpy: UIScrollView {
-
-        var layoutIfNeededCalled = false
-
-        // MARK: UIScrollView
-
-        override func layoutIfNeeded() {
-            super.layoutIfNeeded()
-            layoutIfNeededCalled = true
-        }
-
     }
 
 }
