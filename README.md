@@ -5,6 +5,7 @@
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-green.svg)
 [![Build Status](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider.svg?branch=master)](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider)
 [![CocoaPods](https://img.shields.io/cocoapods/v/ScrollViewKeyboardAvoider.svg)](https://cocoapods.org/pods/ScrollViewKeyboardAvoider)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Adjust insets in `UIScrollView` so the keyboard does not cover content.
 
