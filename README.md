@@ -2,7 +2,8 @@
 
 ![Platform](https://img.shields.io/badge/platform-iOS-333333.svg)
 ![Swift v4.0](https://img.shields.io/badge/swift-v4.0-orange.svg)
-![Code Coverage](https://img.shields.io/badge/coverage-100%25-green.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/99f9fde64d0bede1d46c/maintainability)](https://codeclimate.com/github/darrarski/ScrollViewKeyboardAvoider/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/99f9fde64d0bede1d46c/test_coverage)](https://codeclimate.com/github/darrarski/ScrollViewKeyboardAvoider/test_coverage)
 [![Build Status](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider.svg?branch=master)](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider)
 [![CocoaPods](https://img.shields.io/cocoapods/v/ScrollViewKeyboardAvoider.svg)](https://cocoapods.org/pods/ScrollViewKeyboardAvoider)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
