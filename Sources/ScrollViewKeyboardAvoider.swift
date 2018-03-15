@@ -34,7 +34,7 @@ public class ScrollViewKeyboardAvoider: ScrollViewKeyboardAvoiding {
         } else {
             safeAreaInsets = .zero
         }
-        insets.bottom = max(bottomCoverage - safeAreaInsets.bottom, safeAreaInsets.bottom)
+        insets.bottom = max(0, bottomCoverage - safeAreaInsets.bottom)
         animate(animationDuration) {
             scrollView.contentInset = insets
             scrollView.scrollIndicatorInsets = insets
