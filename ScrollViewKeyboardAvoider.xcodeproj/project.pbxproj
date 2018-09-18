@@ -208,7 +208,6 @@
 				31C423F71FB11C3F001C65B2 /* Resources */,
 				31C424211FB11E1B001C65B2 /* Embed Frameworks */,
 				1141544689786F52C8318D9D /* [CP] Embed Pods Frameworks */,
-				F0786D16D28CAD6D47FC1F35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +246,6 @@
 				31C424231FB11E9D001C65B2 /* Frameworks */,
 				31C424241FB11E9D001C65B2 /* Resources */,
 				EFDF8111B60096ADD682EC37 /* [CP] Embed Pods Frameworks */,
-				4B153AA00AB644CB2211C341 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,21 +364,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B153AA00AB644CB2211C341 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CCC40F48EA31F73A18C81C36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,21 +400,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderTests/Pods-ScrollViewKeyboardAvoiderTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0786D16D28CAD6D47FC1F35 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
