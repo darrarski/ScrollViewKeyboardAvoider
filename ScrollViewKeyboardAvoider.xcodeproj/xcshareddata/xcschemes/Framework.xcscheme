@@ -27,9 +27,38 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "31C424141FB11E1B001C65B2"
+            BuildableName = "ScrollViewKeyboardAvoider.framework"
+            BlueprintName = "ScrollViewKeyboardAvoider"
+            ReferencedContainer = "container:ScrollViewKeyboardAvoider.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "31C424251FB11E9D001C65B2"
+               BuildableName = "ScrollViewKeyboardAvoiderTests.xctest"
+               BlueprintName = "ScrollViewKeyboardAvoiderTests"
+               ReferencedContainer = "container:ScrollViewKeyboardAvoider.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "31C424141FB11E1B001C65B2"
+            BuildableName = "ScrollViewKeyboardAvoider.framework"
+            BlueprintName = "ScrollViewKeyboardAvoider"
+            ReferencedContainer = "container:ScrollViewKeyboardAvoider.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
