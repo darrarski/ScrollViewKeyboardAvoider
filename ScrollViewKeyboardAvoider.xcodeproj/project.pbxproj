@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		023E69B34C2D92F1785BA7D1 /* Pods_ScrollViewKeyboardAvoiderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FA6A997E642BE61AE5BBD4 /* Pods_ScrollViewKeyboardAvoiderTests.framework */; };
+		31207FDB2151B75800005729 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31207FDA2151B75800005729 /* UIKit.framework */; };
 		31C423FD1FB11C3F001C65B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C423FC1FB11C3F001C65B2 /* AppDelegate.swift */; };
 		31C423FF1FB11C3F001C65B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C423FE1FB11C3F001C65B2 /* ViewController.swift */; };
 		31C424041FB11C3F001C65B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C424031FB11C3F001C65B2 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		213E99A01251BF0EC70FB9E7 /* Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewKeyboardAvoiderDemoApp/Pods-ScrollViewKeyboardAvoiderDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2278EDC34D0E52F9610589AD /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewKeyboardAvoiderDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31207FDA2151B75800005729 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		31C423F91FB11C3F001C65B2 /* ScrollViewKeyboardAvoiderDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewKeyboardAvoiderDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C423FC1FB11C3F001C65B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31C423FE1FB11C3F001C65B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31207FDB2151B75800005729 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +114,7 @@
 		055D80F3C94FD2AE44B447E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31207FDA2151B75800005729 /* UIKit.framework */,
 				D8B9C17AE947EA6756DB855F /* Pods_ScrollViewKeyboardAvoider.framework */,
 				A3FA6A997E642BE61AE5BBD4 /* Pods_ScrollViewKeyboardAvoiderTests.framework */,
 				2278EDC34D0E52F9610589AD /* Pods_ScrollViewKeyboardAvoiderDemoApp.framework */,
