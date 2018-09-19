@@ -1,7 +1,7 @@
 # ScrollViewKeyboardAvoider
 
 ![Platform](https://img.shields.io/badge/platform-iOS-333333.svg)
-![Swift v4.0](https://img.shields.io/badge/swift-v4.0-orange.svg)
+![Swift v4.2](https://img.shields.io/badge/swift-v4.2-orange.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/99f9fde64d0bede1d46c/maintainability)](https://codeclimate.com/github/darrarski/ScrollViewKeyboardAvoider/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/99f9fde64d0bede1d46c/test_coverage)](https://codeclimate.com/github/darrarski/ScrollViewKeyboardAvoider/test_coverage)
 [![Build Status](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider.svg?branch=master)](https://travis-ci.org/darrarski/ScrollViewKeyboardAvoider)
@@ -57,7 +57,7 @@ avoider.handleKeyboardFrameChange(newKeyboardFrame,
 Requirements: 
 
 - Ruby with [Bundler](http://bundler.io)
-- Xcode 9
+- Xcode 10
 
 To bootstrap the project run:
 
@@ -66,7 +66,7 @@ bundle install
 bundle exec fastlane setup
 ```
 
-Then open `ScrollViewKeyboardAvoider.xcworkspace` in Xcode.
+Then open `ScrollViewKeyboardAvoider.xcodeproj` in Xcode.
 
 Use `DemoApp` build scheme for building and runing demo app.
 
