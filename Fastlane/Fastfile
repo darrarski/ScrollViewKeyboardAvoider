@@ -1,7 +1,6 @@
 fastlane_version '2.63.0'
 default_platform :ios
 
-XC_WORKSPACE = 'ScrollViewKeyboardAvoider.xcworkspace'
 XC_PROJECT = 'ScrollViewKeyboardAvoider.xcodeproj'
 TESTS_SCHEME = 'Tests'
 CODECLIMATE_REPORTER_ID = 'c4be5f791e71b7869583fe98222bf386975b233e7d94374ddb99666626002b8c'
@@ -10,13 +9,10 @@ platform :ios do
 
   desc 'Bootstrap project'
   lane :setup do
-    system 'diff ../Podfile.lock ../Pods/Manifest.lock > /dev/null'
-    if $?.exitstatus != 0 then
-      puts 'The sandbox is not in sync with the Podfile.lock, installing pods'
-      sh 'cd .. && bundle exec pod install --repo-update'
-    else
-      puts 'Skipping pod install, the sandbox is in sync with the Podfile.lock'
-    end
+    puts 'Updating CocoaPods spec-repo'
+    sh 'cd .. && bundle exec pod repo update'
+    puts 'Bootstraping Carthage'
+    sh 'cd .. && carthage bootstrap --platform iOS'
   end
 
   desc 'Run CodeClimate before-build script'
@@ -34,7 +30,7 @@ platform :ios do
     sh [
       'cd .. && set -o pipefail &&',
       'xcodebuild test',
-      "-workspace #{XC_WORKSPACE}",
+      "-project #{XC_PROJECT}",
       "-scheme #{TESTS_SCHEME}",
       '-sdk iphonesimulator',
       '-destination \'platform=iOS Simulator,name=iPhone 8,OS=latest\'',
@@ -46,7 +42,6 @@ platform :ios do
   desc 'Generate test coverage report in HTML format and open it'
   lane :coverage do
     slather(
-      workspace: XC_WORKSPACE,
       proj: XC_PROJECT,
       scheme: TESTS_SCHEME,
       html: true,
@@ -56,10 +51,21 @@ platform :ios do
     )
   end
 
+  desc 'Generate test coverage report in HTML format'
+  lane :coverage_html do
+    slather(
+      proj: XC_PROJECT,
+      scheme: TESTS_SCHEME,
+      html: true,
+      show: false,
+      output_directory: 'coverage_report',
+      verbose: true
+    )
+  end
+
   desc 'Generate test coverage report in Cobertura XML format'
   lane :coverage_xml do
     slather(
-      workspace: XC_WORKSPACE,
       proj: XC_PROJECT,
       scheme: TESTS_SCHEME,
       cobertura_xml: true,
