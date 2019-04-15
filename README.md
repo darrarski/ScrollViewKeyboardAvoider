@@ -10,6 +10,12 @@
 
 Adjust insets in `UIScrollView` so the keyboard does not cover content.
 
+## ⚠️ Deprecation Notice
+
+**This project became a part of [ScrollViewController](https://github.com/darrarski/ScrollViewController).**
+
+**It's obsolete and will no longer be maintained.**
+
 ## Install
 
 Minimum deployment target: **iOS 10.0** (on **iOS 11** uses Safe Area Layout for iPhone X compatibility)
